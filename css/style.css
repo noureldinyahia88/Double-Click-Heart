@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Kanit:wght@300&family=Open+Sans&display=swap');
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+}
+body {
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    overflow: hidden;
+    margin: 0;
+}
+h3{
+    margin-bottom: 0;
+    text-align: center;
+}
+small{
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.fa-heart{
+    color: red;
+}
+.loveMe{
+    height: 440px;
+    width: 300px;
+    background: url('https://images.unsplash.com/photo-1569518085782-116740932517?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')
+    no-repeat center center/cover;
+    margin: auto;
+    cursor: pointer;
+    max-width: 100%;
+    position: relative;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.loveMe .fa-heart{
+    position: absolute;
+    animation: grow 0.6s linear;
+    transform: translate(-50%, -50%) scale(0);
+}
+@keyframes grow{
+    to {
+        transform: translate(-50%, -50%) scale(10);
+        opacity: 0;
+    }
+}
